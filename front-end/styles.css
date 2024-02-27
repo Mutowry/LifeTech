@@ -1,0 +1,40 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Navbar Styles */
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 28px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+.navbar.active {
+    background-color: rgba(14, 117, 202, 0.24);
+}
+/* Home Page Content */
+.home-content {
+    background-image: url('/images/5.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px; /* Adjust as needed */
+    padding-top: 60px; /* Make space for the fixed navbar */
+    color: white;
+}
